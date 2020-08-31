@@ -83,7 +83,12 @@ class OphomPlugin(octoprint.plugin.SettingsPlugin,
 	def on_api_get(self, request):
 		option = request.args.get('action')
 		if(option == "discover"):
+			# try to discover philips hue gateway
 			r = requests.get("https://discovery.meethue.com/")
+			# no philips hue gateway found
+			if(len(r.json()) == 0):
+				# try to discover phoscon gateway
+				r = requests.get("https://phoscon.de/discover")
 			return flask.jsonify(r.json())
 		elif(option == "isconfigured"):
 			token = self._settings.get(['hue_token'])

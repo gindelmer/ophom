@@ -1,13 +1,13 @@
 <h3>Ophom Settings</h3>
 
-Hue Bridge Status: <span id="ophom_generalstatus" class="badge badge-danger" style="background-color: #ff4b4b;">Not Linked</span>
+Bridge Status: <span id="ophom_generalstatus" class="badge badge-danger" style="background-color: #ff4b4b;">Not Linked</span>
 
 <div style="margin-bottom: 25px;"></div>
 
  <!-- ###### BRIDGE PAIRING ###### -->
 <div id="ophom_bridgenotlinked">
 	<h4>Pairing to the Bridge</h4>
-	<p>Click on the button below to start searching for your Philips Hue Bridge</p>
+	<p>Click on the button below to start searching for your Bridge</p>
 	<button id="ophom_searchbridgebutton" type="button" class="btn"><i class="fa fa-search"></i> Search my bridge</button>
 	<br /><br />
 	<span id="ophom_searchbridgestatus" style="display: none;"></span>
@@ -27,7 +27,7 @@ Hue Bridge Status: <span id="ophom_generalstatus" class="badge badge-danger" sty
  <!-- ###### BRIDGE CONFIGURATION ###### -->
 <div id="ophom_bridgenotconfigured" style="display: none;">
 	<h4>Bridge Configuration</h4>
-	<span id="ophom_configuringstatus">Retrieving your Hue devices....</span>
+	<span id="ophom_configuringstatus">Retrieving your devices....</span>
 	<br />
 	<select id="ophom_plugselection" style="display: none;">
 		<option value="">Choose a plug...</option>
@@ -134,7 +134,7 @@ Hue Bridge Status: <span id="ophom_generalstatus" class="badge badge-danger" sty
 					search_button.innerHTML = '<i class="fa fa-search"></i> Search my bridge';
 					search_button.disabled = false;
 					document.getElementById("ophom_searchbridgestatus").style.display = "";
-					document.getElementById("ophom_searchbridgestatus").innerHTML = "<font color='red'>Unable to find your Hue Bridge. Are you on the same network ?</font>";
+					document.getElementById("ophom_searchbridgestatus").innerHTML = "<font color='red'>Unable to find your Bridge. Are you on the same network ?</font>";
 				}
 				else
 				{
