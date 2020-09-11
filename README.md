@@ -2,9 +2,9 @@
 
 ### Automatic Shudown
 
-Switch a Philips Hue that your printer is connected to ON or OFF You can set an automatic switch-off based on a minimum temperature.
+Switch a outlet that your printer is connected to ON or OFF. You can set an automatic switch-off based on a minimum temperature.
 
-The Philips Hue bridge have an internal clock. Ophom can create à delayed power off for a conventional shutdown of the system (eg: Raspberry Pi powered by printer PSU)
+The bridge have an internal clock. Ophom can create à delayed power off for a conventional shutdown of the system (eg: Raspberry Pi powered by printer PSU)
 
 ![Ophom Configuration](docs/images_readme/paired.png)
 
@@ -15,13 +15,13 @@ There are different security option for cuting power in case there is a problem:
 - If an ermegency stop (M112 GCODE) is send to the printer
 - If a maximum temperature is reached by the nozzle or the bed
 
-### Hue Sytem Rules
+### Bridge Sytem Rules
 
-You can create rules on your Bridge for automatic power on/off other Hue devices at the same time your change the state of your plug.
+You can create rules on your bridge for automatic power on/off other devices at the same time your change the state of your plug.
 
 ![Ophom Hue Rules](docs/images_readme/hue_rules.png)
 
-*This rules are not controlled by Ophom but directly by the Philips Hue Bridge*
+*This rules are not controlled by Ophom but directly by the bridge*
 
 ## Setup
 
